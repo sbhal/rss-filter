@@ -2,8 +2,8 @@ name: build
 
 env:
   GITHUB_REGISTRY: "ghcr.io"
-  GITHUB_OWNER: "mjovanc"
-  GITHUB_DOCKER_IMAGE: "medium-rust-docker"
+  GITHUB_OWNER: "sbhal"
+  GITHUB_DOCKER_IMAGE: "rss-filter"
 
 on:
   push:
