@@ -17,8 +17,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     libssl-dev
 
-COPY --from=builder /app/target/release/rocket . 
+COPY --from=builder /app/target/release/rss-filter .
 
 EXPOSE 8000
 
-CMD ["./rocket"] 
+CMD ["./rss-filter"]

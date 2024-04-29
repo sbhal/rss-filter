@@ -1,11 +1,15 @@
 [package]
-name = "medium-rust-docker"
+name = "deals-rss-filter"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rocket = "=0.5.0-rc.3"
+rocket = "=0.5.0"
+chrono = "0.4.38"
+reqwest = "0.12.4"
+rss = "2.0"
+html2md = "0.2.13"
 
 [[bin]]
-name = "rocket"
+name = "rss-filter"
 path = "src/main.rs"
